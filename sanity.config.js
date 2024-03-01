@@ -7,6 +7,7 @@ const sanityConfig = defineConfig({
   title: "sanity-portfolio",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: "production",
+  basePath: "/studio",
   plugins: [structureTool()],
   schema: {
     types: schemaTypes,
